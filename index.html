@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://id-preview-%2D82d375d6-bb64-4f9e-a025-751afefba54d.lovable.app/ -->
+<html lang="en" data-tsd-source="/src/routes/__root.tsx:105:5"><head data-tsd-source="/src/routes/__root.tsx:106:7"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./EST Brew Cafe — Coffee, Croffles &amp; Comfort Plates_files/styles-C3LKHRte.css" data-precedence="default"><title>EST Brew Cafe — Coffee, Croffles &amp; Comfort Plates</title><meta name="author" content="Lovable"><meta name="twitter:site" content="@Lovable"><meta name="description" content="EST Brew Cafe serves hand-pulled coffee, matcha, signature croffles and comfort mains. Dine in, order on WhatsApp, or book us for events and private parties."><meta property="og:title" content="EST Brew Cafe — Coffee, Croffles &amp; Comfort Plates"><meta property="og:description" content="EST Brew Cafe serves hand-pulled coffee, matcha, signature croffles and comfort mains. Dine in, order on WhatsApp, or book us for events and private parties."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><link rel="modulepreload" href="./EST Brew Cafe — Coffee, Croffles &amp; Comfort Plates_files/index-DE88JgTm.js.download"><link rel="modulepreload" href="https://id-preview--82d375d6-bb64-4f9e-a025-751afefba54d.lovable.app/assets/routes-q4KDc2Gv.js"><link rel="icon" type="image/png" href="./est-brew-logo.png"><style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+
+  /* Scroll fade animations */
+  .fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+</style>
+<meta name="twitter:title" content="EST Brew Cafe — Coffee, Croffles &amp;amp; Comfort Plates"><meta name="twitter:description" content="EST Brew Cafe serves hand-pulled coffee, matcha, signature croffles and comfort mains. Dine in, order on WhatsApp, or book us for events and private parties."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c571043cf28d1ebcbe4026803ef4ed96/id-preview-6db1e5f5--82d375d6-bb64-4f9e-a025-751afefba54d.lovable.app-1787457090551.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c571043cf28d1ebcbe4026803ef4ed96/id-preview-6db1e5f5--82d375d6-bb64-4f9e-a025-751afefba54d.lovable.app-1787457090551.png"></head><body data-tsd-source="/src/routes/__root.tsx:109:7"><!--$--><div data-tsd-source="/src/routes/index.tsx:23:10"><link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Karla:wght@400;600&family=Parisienne&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --white: #fdfcfa;
+    --sage: #7d9a8d;
+    --sage-soft: #eaf0ec;
+    --clay: #d9a179;
+    --clay-soft: #f7ece3;
+    --ink: #3a4340;
+    --muted: #7b847f;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html,
+body {
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--white);
+}
+
+body {
+  color: var(--ink);
+  font-family: "Karla", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.est {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+  .est img { max-width: 100%; display: block; }
+  .est .wrap {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+  .est h1, .est h2, .est h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 400; margin: 0; line-height: 1.15; letter-spacing: .01em; }
+  .est .script { font-family: "Parisienne", cursive; color: var(--sage); font-weight: 400; }
+  .est .eyebrow { font-size: 11px; letter-spacing: .28em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+  .est p { margin: 0 0 14px; }
+  .est section { padding: 72px 0; }
+
+  /* nav */
+  .est .nav { position: sticky; top: 0; z-index: 20; background: rgba(253,252,250,.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--sage-soft); }
+  .est .nav-in { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 20px; max-width: 1120px; margin: 0 auto; }
+  .est .nav img { height: 34px; width: auto; }
+  .est .links { display: none; gap: 26px; }
+  .est .links a { color: var(--ink); text-decoration: none; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+  .est .links a:hover { opacity: 1; color: var(--sage); }
+  @media (min-width: 860px) { .est .links { display: flex; } }
+
+  /* buttons */
+  .est .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 22px; border-radius: 999px; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; border: 1px solid transparent; transition: .25s ease; }
+  .est .btn-solid { background: var(--sage); color: #fff; }
+  .est .btn-solid:hover { background: #6b8779; }
+  .est .btn-ghost { border-color: var(--clay); color: var(--clay); background: transparent; }
+  .est .btn-ghost:hover { background: var(--clay-soft); }
+  .est .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  /* hero */
+  .est .hero { position: relative; min-height: 88vh; display: flex; align-items: center; padding: 96px 0 72px; }
+  .est .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+  .est .hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(253,252,250,.92), rgba(253,252,250,.72) 45%, rgba(253,252,250,.95)); }
+  .est .hero .wrap { position: relative; text-align: center; }
+  .est .hero h1 { font-size: clamp(38px, 11vw, 78px); }
+  .est .hero .script { font-size: clamp(26px, 8vw, 46px); display: block; margin-bottom: 4px; }
+  .est .hero p { max-width: 520px; margin: 18px auto 26px; color: var(--muted); font-size: 15px; }
+  .est .hero .btns { justify-content: center; }
+
+  /* generic split */
+  .est .split { display: grid; gap: 32px; align-items: center; }
+  @media (min-width: 860px) { .est .split { grid-template-columns: 1fr 1fr; gap: 56px; } }
+  .est .frame { border-radius: 18px; overflow: hidden; box-shadow: 0 18px 40px -28px rgba(58,67,64,.5); }
+  .est h2 { font-size: clamp(28px, 7vw, 44px); }
+  .est .lead { color: var(--muted); font-size: 15px; }
+
+  /* testimonials */
+  .est .quotes { background: var(--sage-soft); }
+  .est .quote-grid { display: grid; gap: 18px; margin-top: 26px; }
+  @media (min-width: 760px) { .est .quote-grid { grid-template-columns: repeat(3, 1fr); } }
+  .est .quote { background: #fff; border-radius: 16px; padding: 24px 22px; }
+  .est .quote p { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 18px; line-height: 1.55; color: var(--ink); }
+  .est .quote span { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+
+  /* menu cards */
+  .est .cards { display: grid; gap: 18px; margin-top: 30px; }
+  @media (min-width: 760px) { .est .cards { grid-template-columns: repeat(3, 1fr); } }
+  .est .card { border-radius: 16px; overflow: hidden; background: #fff; border: 1px solid var(--sage-soft); }
+  .est .card img { height: 190px; width: 100%; object-fit: cover; }
+  .est .card .body { padding: 18px 20px 22px; }
+  .est .card h3 { font-size: 22px; margin-bottom: 6px; }
+  .est .card p { font-size: 14px; color: var(--muted); margin: 0; }
+
+  /* events */
+  .est .events { position: relative; color: #fff; }
+  .est .events .bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+  .est .events .bg::after { content: ""; position: absolute; inset: 0; background: rgba(45,54,50,.62); }
+  .est .events .wrap { position: relative; text-align: center; max-width: 700px; }
+  .est .events .script { color: #f2d9c4; }
+  .est .events p { color: rgba(255,255,255,.85); font-size: 15px; }
+  .est .events .btns { justify-content: center; }
+  .est .events .btn-ghost { border-color: rgba(255,255,255,.7); color: #fff; }
+  .est .events .btn-ghost:hover { background: rgba(255,255,255,.14); }
+
+  /* visit / contact */
+  .est .info { display: grid; gap: 22px; margin-top: 28px; }
+  @media (min-width: 760px) { .est .info { grid-template-columns: repeat(3, 1fr); } }
+  .est .info div h3 { font-size: 20px; margin-bottom: 6px; }
+  .est .info div p { font-size: 14px; color: var(--muted); margin: 0; }
+  .est .contact { background: var(--clay-soft); }
+  .est .contact .wrap { text-align: center; max-width: 640px; }
+
+  .est footer { padding: 34px 0; border-top: 1px solid var(--sage-soft); text-align: center; }
+  .est footer img { height: 40px; margin: 0 auto 12px; }
+  .est footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  .est .divider { width: 54px; height: 1px; background: var(--clay); margin: 18px auto; }
+</style>
+
+<div class="est">
+  <nav class="nav">
+    <div class="nav-in">
+      <a href="#top" onclick="location.reload();"><img src="./est-brew-logo.png" alt="EST Brew Cafe logo"></a>
+<div class="links">
+  <a href="#story">Our Story</a>
+  <a href="#menu">Menu</a>
+  <a href="#events">Events</a>
+  <a href="#visit">Visit</a>
+  <a href="#contact">Contact</a>
+</div>
+      <a class="btn btn-solid" href="#contact">Order</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-bg" style="background-image:url('./2.2.png')"></div>
+    <div class="wrap">
+      <span class="script">welcome to</span>
+      <h1>EST Brew Cafe</h1>
+      <div class="divider"></div>
+      <p>A quiet corner for slow mornings — hand-pulled coffee, matcha, croffles and comfort plates, made fresh every day.</p>
+      <div class="btns">
+        <a class="btn btn-solid" href="#menu">See the Menu</a>
+        <a class="btn btn-ghost" href="https://wa.me/60123456789?text=Hi%2C%20EST%20Brew!%20I%20would%20like%20to%20order%20from%20youu%20%3A)" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="quotes" id="testimonials">
+    <div class="wrap">
+      <p class="eyebrow" style="text-align:center">Kind words</p>
+      <h2 style="text-align:center"><span class="script">loved by</span> our regulars</h2>
+      <div class="quote-grid">
+        <div class="quote">
+          <p>“The matcha croffle is unreal — crisp, warm and just sweet enough. My weekend ritual now.”</p>
+          <span>— Aisyah R.</span>
+        </div>
+        <div class="quote">
+          <p>“Calm, pretty and never rushed. The seafood aglio olio and a flat white is my perfect lunch.”</p>
+          <span>— Daniel T.</span>
+        </div>
+        <div class="quote">
+          <p>“They catered our office party — the dessert table was stunning and everything tasted homemade.”</p>
+          <span>— Mei Ling C.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="wrap split">
+      <div class="frame"><img src="./1.1.png" alt="Freshly made croffles on a wooden board"></div>
+      <div>
+        <p class="eyebrow">Who we are</p>
+        <h2>Small kitchen, <span class="script">big heart</span></h2>
+        <p class="lead">EST Brew began with two friends, one espresso machine and a stubborn belief that a neighbourhood deserves somewhere gentle to sit. Everything on our counter is made in-house each morning — croffles folded by hand, sauces simmered slow, beans pulled to order.</p>
+        <p class="lead">We keep the room soft, the music low and the coffee honest. Come alone with a book, or bring everyone you love.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" style="background:var(--white); padding-top: 20px;">
+    <div class="wrap">
+      <p class="eyebrow" style="text-align:center">What we serve</p>
+      <h2 style="text-align:center">From our <span class="script">counter</span></h2>
+      <div class="cards">
+        <div class="card">
+          <img src="./1.1.png" alt="Signature croffles with matcha, caramel and cookie toppings">
+          <div class="body"><h3>Signature Croffles</h3><p>Matcha drizzle, biscoff crumble, cookies &amp; cream — crisp outside, buttery within.</p></div>
+        </div>
+        <div class="card">
+          <img src="./5.5.png" alt="Pasta bowls and sparkling drinks">
+          <div class="body"><h3>Pasta &amp; Mains</h3><p>Seafood aglio olio, squid ink marinara, grilled chicken chop with rice or mac &amp; cheese.</p></div>
+        </div>
+        <div class="card">
+          <img src="./4.4.png" alt="Iced tea, mac and cheese and chicken chop set">
+          <div class="body"><h3>Brews &amp; Coolers</h3><p>Matcha latte, hot chocolate, house lemon tea and single-origin espresso.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events" id="events">
+    <div class="bg" style="background-image:url('./3.3.png')"></div>
+    <div class="wrap">
+      <p class="eyebrow" style="color:rgba(255,255,255,.7)">Celebrate with us</p>
+      <h2><span class="script">events</span> &amp; private parties</h2>
+      <p>Birthdays, bridal showers, office gatherings and workshops — EST Brew is open for full venue bookings and custom dessert tables. Tell us the date and headcount, and we will shape a menu around it.</p>
+      <div class="btns">
+        <a class="btn btn-ghost" href="https://wa.me/60123456789?text=Hi!%20I%20would%20like%20to%20enquire%20about%20having%20you%20as%20part%20of%20our%20event!" target="_blank" rel="noopener">Enquire About Events</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <p class="eyebrow" style="text-align:center">Where to find us</p>
+      <h2 style="text-align:center">Come <span class="script">sit awhile</span></h2>
+      <div class="info">
+        <div><h3>Address</h3><p>12, Jalan Damai Suria 3,<br>Taman Damai, 43300 Seri Kembangan,<br>Selangor, Malaysia</p></div>
+        <div><h3>Opening Hours</h3><p>Monday – Thursday · 9am – 7pm<br>Friday – Sunday · 9am – 10pm</p></div>
+        <div><h3>Say Hello</h3><p>hello@estbrew.cafe<br>+60 12-345 6789</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Order, book <span class="script">or just say hi</span></h2>
+      <p class="lead">Send us a message on WhatsApp for orders and reservations, or email us for events, catering and collaborations.</p>
+      <div class="btns" style="justify-content:center">
+        <a class="btn btn-solid" href="https://wa.me/60123456789?text=Hi%2C%20EST%20Brew!%20I%20would%20like%20to%20order%20from%20youu%20%3A)" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a class="btn btn-ghost" href="mailto:hello@estbrew.cafe?subject=Enquiry%20for%20EST%20Brew%20Cafe&amp;body=Hi%20EST%20Brew%2C%0A%0AI%20would%20like%20to%20enquire%20about%3A%0A%0A">Email an Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <img src="./est-brew-logo.png" alt="EST Brew Cafe">
+      <p class="script" style="font-size:20px">brewed with care</p>
+      <p>© 2026 EST Brew Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+</div><!--/$--><script type="module" async="" src="./EST Brew Cafe — Coffee, Croffles &amp; Comfort Plates_files/index-DE88JgTm.js.download"></script>
+
+<script src="./EST Brew Cafe — Coffee, Croffles &amp; Comfort Plates_files/lovable.js.download" type="module"></script>
+
+<script>
+  // Fade sections on scroll
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add fade-section class to all sections that should animate
+    const sections = document.querySelectorAll('.est section, .est header, .est footer');
+    sections.forEach(section => {
+      section.classList.add('fade-section');
+    });
+    
+    // Initial check for visible sections
+    checkVisibility();
+    
+    // Check visibility on scroll
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+    
+    function checkVisibility() {
+      const fadeElements = document.querySelectorAll('.fade-section');
+      const windowHeight = window.innerHeight;
+      const triggerPoint = windowHeight * 0.85; // 85% of viewport height
+      
+      fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const elTop = rect.top;
+        
+        if (elTop < triggerPoint) {
+          el.classList.add('visible');
+        } else {
+          el.classList.remove('visible');
+        }
+      });
+    }
+  });
+</script>
+
+</body></html>
